@@ -20,6 +20,7 @@ return {
     local mappings = {
       ["b"] = {
         name = "buffer",
+        b = { "<cmd>Telescope buffers<CR>", "find buffers" },
         n = { "<cmd>bnext<CR>", "switch to next buffer" },
         o = { "<cmd>e #<CR>", "switch between last two buffers" },
         p = { "<cmd>bprevious<CR>", "switch to previous buffer" },
