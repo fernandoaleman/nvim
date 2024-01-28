@@ -92,10 +92,9 @@ return {
       ["k"] = { "<cmd>bdelete<CR>", "kill buffer" },  -- close current file
       ["l"] = { "<cmd>Lazy<CR>", "lazy" }, -- invoke lazy plugin manager
       ["q"] = { "<cmd>wqall!<CR>", "quit" }, -- quit Neovim after saving the file
-      ["w"] = { "<cmd>w!<CR>", "save" }, -- save current file
 
       -- window management
-      ["s"] = {
+      ["w"] = {
         name = "window management",
         e = { "<C-w>=", "Make splits equal size" }, -- make split windows equal width & height
         h = { "<C-w>s", "Split window horizontally" }, -- split window horizontally
