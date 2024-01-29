@@ -10,8 +10,8 @@ return {
 
     -- set keymaps
     local mappings = {
-      ["a"] = {
-        name = "auto sessions",
+      ["s"] = {
+        name = "sessions",
         r = { "<cmd>SessionRestore<CR>", "restore session for cwd" },
         s = { "<cmd>SessionSave<CR>", "save session for auto session root dir" },
       },

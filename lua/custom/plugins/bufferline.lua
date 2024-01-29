@@ -21,6 +21,8 @@ return {
       ["b"] = {
         name = "buffer",
         b = { "<cmd>Telescope buffers<CR>", "find buffers" },
+        c = { "<cmd>bdelete<CR>", "close buffer" },  -- close current file
+        k = { "<cmd>bdelete<CR>", "kill buffer" },  -- close current file
         n = { "<cmd>bnext<CR>", "switch to next buffer" },
         o = { "<cmd>e #<CR>", "switch between last two buffers" },
         p = { "<cmd>bprevious<CR>", "switch to previous buffer" },

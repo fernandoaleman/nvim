@@ -41,20 +41,18 @@ return {
         b = { "<cmd>Telescope buffers<CR>", "find buffers" },
         c = { "<cmd>Telescope grep_string<CR>", "find string under cursor in cwd" },
         f = { "<cmd>Telescope find_files<CR>", "find files in cwd" },
-        h = { "<cmd>Telescope help_tags<CR>", "find help" },
-        k = { "<cmd>Telescope keymaps<CR>", "keymaps" },
-        m = { "<cmd>Telescope man_pages<CR>", "man pages" },
+        g = { "<cmd>Telescope live_grep<CR>", "find string in cwd" },
         r = { "<cmd>Telescope oldfiles<CR>", "find recent files" },
         s = { "<cmd>Telescope live_grep<CR>", "find string in cwd" },
       },
 
-      ["s"] = {
-        name = "search",
+      ["h"] = {
+        name = "help",
         c = { "<cmd>Telescope commands<CR>", "commands" },
-        h = { "<cmd>Telescope help_tags<CR>", "find help" },
         k = { "<cmd>Telescope keymaps<CR>", "keymaps" },
         m = { "<cmd>Telescope man_pages<CR>", "man pages" },
         r = { "<cmd>Telescope registers<CR>", "registers" },
+        t = { "<cmd>Telescope help_tags<CR>", "find help" },
       },
     }
 

@@ -69,7 +69,7 @@ return {
     -- set keymaps
     local mappings = {
       ["e"] = {
-        name = "nvim-tree",
+        name = "file explorer",
         c = { "<cmd>NvimTreeCollapse<CR>", "collapse file explorer" },
         e = { "<cmd>NvimTreeToggle<CR>", "toggle file explorer" },
         f = { "<cmd>NvimTreeFindFileToggle<CR>", "toggle file explorer on current file" },

@@ -85,12 +85,11 @@ return {
     }
 
     local mappings = {
-      ["+"] = { "<C-a>", "increment number" }, -- increment
-      ["-"] = { "<C-x>", "decrement number" }, -- decrement
       ["<leader>"] = { "<C-^>", "toggle between the last two files" }, -- switch between last two files
+      ["a"] = { "<cmd>Alpha<CR>", "alpha" }, -- open alpha dashboard
       ["h"] = { "<cmd>nohl<CR>", "clear search highlights" }, -- clear search highlights
       ["k"] = { "<cmd>bdelete<CR>", "kill buffer" },  -- close current file
-      ["l"] = { "<cmd>Lazy<CR>", "lazy" }, -- invoke lazy plugin manager
+      ["p"] = { "<cmd>Lazy<CR>", "lazy" }, -- invoke lazy plugin manager
 
       -- window management
       ["w"] = {

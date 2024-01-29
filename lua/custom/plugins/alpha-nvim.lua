@@ -20,13 +20,14 @@ return {
 
     -- Set menu
     dashboard.section.buttons.val = {
-      dashboard.button("e",  "  > New File", "<cmd>ene <BAR> startinsert<CR>"),
-      dashboard.button("ee", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
-      dashboard.button("ff", "󰱼  > Find File", "<cmd>Telescope find_files<CR>"),
-      dashboard.button("fs", "  > Find Word", "<cmd>Telescope live_grep<CR>"),
-      dashboard.button("fr", "󰁯  > Recently Used Files", "<cmd>Telescope oldfiles<CR>"),
-      dashboard.button("ar", "󰁯  > Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
-      dashboard.button("q",  "  > Quit NVIM", "<cmd>qa<CR>"),
+      dashboard.button("e", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
+      dashboard.button("f", "󰱼  > Find File", "<cmd>Telescope find_files<CR>"),
+      dashboard.button("g", "  > Find Word", "<cmd>Telescope live_grep<CR>"),
+      dashboard.button("n", "  > New File", "<cmd>ene <BAR> startinsert<CR>"),
+      dashboard.button("p", "  > Lazy", "<cmd>Lazy<CR>"),
+      dashboard.button("r", "󰙰  > Recently Used Files", "<cmd>Telescope oldfiles<CR>"),
+      dashboard.button("s", "󰁯  > Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
+      dashboard.button("q", "  > Quit NVIM", "<cmd>qa<CR>"),
     }
 
     local function footer()
