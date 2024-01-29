@@ -91,7 +91,6 @@ return {
       ["h"] = { "<cmd>nohl<CR>", "clear search highlights" }, -- clear search highlights
       ["k"] = { "<cmd>bdelete<CR>", "kill buffer" },  -- close current file
       ["l"] = { "<cmd>Lazy<CR>", "lazy" }, -- invoke lazy plugin manager
-      ["q"] = { "<cmd>wqall!<CR>", "quit" }, -- quit Neovim after saving the file
 
       -- window management
       ["w"] = {
