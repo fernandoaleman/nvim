@@ -90,6 +90,7 @@ return {
       ["h"] = { "<cmd>nohl<CR>", "clear search highlights" }, -- clear search highlights
       ["k"] = { "<cmd>bdelete<CR>", "kill buffer" },  -- close current file
       ["p"] = { "<cmd>Lazy<CR>", "lazy" }, -- invoke lazy plugin manager
+      ["q"] = { "<cmd>qa<CR>", "quit" }, -- quit nvim
 
       -- window management
       ["w"] = {
