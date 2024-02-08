@@ -7,6 +7,7 @@ return {
 
     conform.setup({
       formatters_by_ft = {
+        ansible = { "prettier" },
         css = { "prettier" },
         html = { "prettier" },
         javascript = { "prettier" },

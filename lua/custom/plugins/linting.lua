@@ -6,6 +6,7 @@ return {
     local lint = require("lint")
 
     lint.linters_by_ft = {
+      ansible = { "ansible-lint" },
       javascript = { "eslint_d" },
       python = { "pylint" },
       ruby = { "rubocop" },

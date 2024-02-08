@@ -70,6 +70,13 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
 
+    -- configure ansible server
+    lspconfig["ansiblels"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      filetypes = { "yaml" },
+    })
+
     -- configure html server
     lspconfig["html"].setup({
       capabilities = capabilities,
@@ -86,7 +93,7 @@ return {
     lspconfig["emmet_ls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
-      filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", },
+      filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
     })
 
     -- configure python server
@@ -120,7 +127,7 @@ return {
     lspconfig.solargraph.setup({
       capabilities = capabilities,
       on_attach = on_attach,
-      cmd = { os.getenv( "HOME" ) .. "/.asdf/shims/solargraph", 'stdio' },
+      cmd = { os.getenv("HOME") .. "/.asdf/shims/solargraph", "stdio" },
       root_dir = lspconfig.util.root_pattern("Gemfile", ".git", "."),
       settings = {
         solargraph = {
@@ -130,9 +137,9 @@ return {
           folding = true,
           references = true,
           rename = true,
-          symbols = true
-        }
-      }
+          symbols = true,
+        },
+      },
     })
   end,
 }

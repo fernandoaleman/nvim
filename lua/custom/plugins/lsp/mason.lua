@@ -36,6 +36,7 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
+        "ansiblels",
         "cssls",
         "emmet_ls",
         "html",
@@ -49,6 +50,7 @@ return {
 
     mason_tool_installer.setup({
       ensure_installed = {
+        "ansible-lint", -- ansible linter
         "black", -- python formatter
         "eslint_d", -- js linter
         "isort", -- python formatter
