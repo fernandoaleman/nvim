@@ -36,6 +36,7 @@ return {
 
     -- set keymaps
     local mappings = {
+      ["b"] = { "<cmd>Telescope buffers<CR>", "find buffers" },
       ["f"] = {
         name = "file search",
         b = { "<cmd>Telescope buffers<CR>", "find buffers" },
