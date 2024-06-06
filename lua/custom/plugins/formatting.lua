@@ -18,11 +18,14 @@ return {
         ruby = { "rubocop" },
         yaml = { "prettier" },
       },
-      format_on_save = {
-        lsp_fallback = true,
-        async = false,
-        timeout_ms = 1000,
-      },
+      -- Do not auto format on save for now
+      -- because it causes issues on some files
+      --
+      -- format_on_save = {
+      --   lsp_fallback = true,
+      --   async = false,
+      --   timeout_ms = 1000,
+      -- },
     })
 
     vim.keymap.set({ "n", "v" }, "<leader>mp", function()
