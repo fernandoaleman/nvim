@@ -14,3 +14,8 @@ amd64
 arm64
 dotfiles
 testinfra
+misformatted
+flake8
+yamllint
+isort
+LazyVim
