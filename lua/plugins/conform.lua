@@ -1,9 +1,20 @@
--- since this is just for reference, don't actually load anything here and return an empty spec
--- stylua: ignore
-if true then return {} end
+-- ~/.config/nvim/lua/plugins/conform.lua
 
 -- this fixes rubocop errors in LazyVim when using ruby < 3
 -- when using ruby version < 3, create a .lazy.lua in the root of the project and add the following
+
+local function get_ruby_version()
+  local handle = io.popen("ruby -e 'print RUBY_VERSION' 2>/dev/null")
+  if handle then
+    local result = handle:read("*a")
+    handle:close()
+    return result
+  end
+  return nil
+end
+
+local ruby_version = get_ruby_version()
+local use_old_args = ruby_version and ruby_version:match("^2%.") -- true if Ruby version starts with 2.
 
 return {
   "stevearc/conform.nvim",
@@ -12,11 +23,20 @@ return {
       ruby = { "rubocop" },
     },
     formatters = {
-      rubocop = {
-        -- The settings below are because of ruby 2.6.7
-        -- Once we upgrade to 3.0.0, we can remove these settings
-        command = os.getenv("HOME") .. "/.asdf/shims/rubocop", -- Use custom rubocop path
-        args = { "--auto-correct", "--format", "quiet", "--stderr", "--stdin", "$FILENAME" }, -- Override default args
+      rubocop = use_old_args and {
+        command = os.getenv("HOME") .. "/.asdf/shims/rubocop",
+        args = {
+          "--auto-correct",
+          "--format",
+          "quiet",
+          "--stderr",
+          "--stdin",
+          "$FILENAME",
+        },
+      } or {
+        -- Ruby >= 3 settings
+        command = "rubocop", -- assuming default path is fine
+        args = { "--autocorrect", "--stdin", "$FILENAME", "--stderr", "--format", "quiet" },
       },
     },
   },
