@@ -21,6 +21,7 @@ return {
   opts = {
     formatters_by_ft = {
       ruby = { "rubocop" },
+      yaml = { "prettier" },
     },
     formatters = {
       rubocop = use_old_args and {
