@@ -11,12 +11,13 @@ return {
       "<leader>sr",
       function()
         local grug = require("grug-far")
-        local ext = vim.bo.buftype == "" and vim.fn.expand("%:e")
+        -- local ext = vim.bo.buftype == "" and vim.fn.expand("%:e")
         grug.open({
           transient = true,
           prefills = {
             -- Do not filter by file extension by default
-            -- Uncomment the next line to default to filter by file extension
+            -- Uncomment the next line and `local ext` above
+            -- to default to filter by file extension
             -- filesFilter = ext and ext ~= "" and "*." .. ext or nil,
             flags = "--hidden --glob !.git/ --no-ignore",
           },

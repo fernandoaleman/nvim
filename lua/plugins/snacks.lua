@@ -12,6 +12,11 @@ return {
           ignored = true,
           exclude = { ".git", "node_modules", ".cache" },
         },
+        grep = {
+          hidden = true,
+          ignored = true,
+          exclude = { ".git", "node_modules", ".cache" },
+        },
       },
     },
   },
