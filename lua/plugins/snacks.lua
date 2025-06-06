@@ -10,12 +10,12 @@ return {
         files = {
           hidden = true,
           ignored = true,
-          exclude = { ".git", "node_modules", ".cache" },
+          exclude = { ".git", "node_modules", ".cache", ".ansible", "__pycache__" },
         },
         grep = {
           hidden = true,
           ignored = true,
-          exclude = { ".git", "node_modules", ".cache" },
+          exclude = { ".git", "node_modules", ".cache", ".ansible", "__pycache__" },
         },
       },
     },
