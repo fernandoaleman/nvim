@@ -17,3 +17,11 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.softtabstop = 2
   end,
 })
+
+-- register jinja2 filetypes
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = { "*.j2", "*.jinja", "*.jinja2" },
+  callback = function()
+    vim.bo.filetype = "jinja"
+  end,
+})

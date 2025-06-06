@@ -22,6 +22,7 @@ return {
     formatters_by_ft = {
       ruby = { "rubocop" },
       yaml = { "prettier" },
+      jinja = {},
     },
     formatters = {
       rubocop = use_old_args and {
