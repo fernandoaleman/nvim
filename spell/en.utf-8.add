@@ -19,3 +19,11 @@ flake8
 yamllint
 isort
 LazyVim
+sudoers
+sudo
+Nginx
+systemd
+logrotate
+AWS
+codedeploy
+CodeDeploy
