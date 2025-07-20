@@ -19,7 +19,7 @@ return {
             -- Uncomment the next line and `local ext` above
             -- to default to filter by file extension
             -- filesFilter = ext and ext ~= "" and "*." .. ext or nil,
-            flags = "--hidden --glob !.git/ --no-ignore",
+            flags = "--hidden --no-ignore --glob !.git/ --glob !.terraform --glob !.ansible",
           },
         })
       end,
