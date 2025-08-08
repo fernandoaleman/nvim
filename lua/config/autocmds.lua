@@ -25,3 +25,13 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
     vim.bo.filetype = "jinja"
   end,
 })
+
+-- ansi
+vim.api.nvim_create_autocmd("BufRead", {
+  pattern = "*.txt",
+  callback = function()
+    if vim.fn.search("\x1b\\[", "n") > 0 then
+      vim.cmd("AnsiEsc")
+    end
+  end,
+})
