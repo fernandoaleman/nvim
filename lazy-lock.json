@@ -20,6 +20,7 @@
   "mini.pairs": { "branch": "main", "commit": "d5a29b6254dad07757832db505ea5aeab9aad43a" },
   "noice.nvim": { "branch": "main", "commit": "7bfd942445fb63089b59f97ca487d605e715f155" },
   "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },
+  "nvim-ansible": { "branch": "main", "commit": "bba61168b7aef735e7f950fdfece5ef6c388eacf" },
   "nvim-lint": { "branch": "master", "commit": "ae64d6466ed92b68353122d920e314ff2c8dd0a8" },
   "nvim-lspconfig": { "branch": "master", "commit": "0044d0987ef7e624d04141d0f90d0481fd3c3663" },
   "nvim-treesitter": { "branch": "main", "commit": "74b119812e9f82bccc2f0eca156faff0354362ae" },
