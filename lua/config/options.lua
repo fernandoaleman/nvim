@@ -7,3 +7,7 @@ vim.opt.swapfile = false
 
 -- File formats
 vim.opt.fileformats = { "unix", "mac" }
+
+-- Ruby
+vim.g.lazyvim_ruby_lsp = "solargraph"
+vim.g.lazyvim_ruby_formatter = "rubocop"
