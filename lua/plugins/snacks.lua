@@ -1,6 +1,12 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    -- dim wallpaper behind the lazygit float (matches picker look)
+    styles = {
+      lazygit = {
+        backdrop = 60,
+      },
+    },
     -- show hidden files by default
     picker = {
       sources = {
